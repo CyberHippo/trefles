@@ -38,6 +38,6 @@ jobs:
           GitHub action.
         commit-message: "Automated sitemap update."
         author: Vincent A Cicirello <cicirello@users.noreply.github.com>
-        committer: Hippolyte Vergnol 
+        committer: Hippolyte Vergnol <hippolyte@vergnol.eu>
         branch: create-pull-request/sitemap
         delete-branch: true
