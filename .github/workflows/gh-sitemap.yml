@@ -1,4 +1,4 @@
-name: Deploy
+name: Generate sitemap
 
 on:
   push:
@@ -27,15 +27,3 @@ jobs:
         echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
         echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
-
-  deploy:
-    runs-on: ubuntu-18.04
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: /
-        cname: www.les-trefles.fr
