@@ -22,3 +22,41 @@
   background-color: #F7BC05;
   color : #3D4449;
   }
+
+.ahv {
+		border-radius: 0.375em;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.ahv img {
+			border-radius: 0.375em;
+			display: block;
+		}
+
+  #banner .ahv {
+			-moz-flex-grow: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-grow: 0;
+			flex-grow: 0;
+			-moz-flex-shrink: 0;
+			-webkit-flex-shrink: 0;
+			-ms-flex-shrink: 0;
+			flex-shrink: 0;
+			display: block;
+			margin: 1em 1em 2em 1em;
+			width: 100%;
+		}
+			#banner .ahv img {
+				height: 100%;
+				-moz-object-fit: cover;
+				-webkit-object-fit: cover;
+				-ms-object-fit: cover;
+				object-fit: cover;
+				-moz-object-position: center;
+				-webkit-object-position: center;
+				-ms-object-position: center;
+				object-position: center;
+				width: 100%;
+			}
