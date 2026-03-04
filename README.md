@@ -1,5 +1,5 @@
 # Les Trefles
 
-> Code for Website Maison d'hôte les Trèfles
+> Code for Website Gîte les Trèfles
 
 Deployed using Github Pages and Cloudflare.
