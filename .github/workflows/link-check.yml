@@ -1,0 +1,23 @@
+name: Check links
+
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    name: Check links
+
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v6
+
+    - name: Check links
+      uses: lycheeverse/lychee-action@v2.4.1
+      with:
+        args: --no-progress --max-retries 2 --accept 200,206,429 './*.html'
+        fail: false
+        jobSummary: true
