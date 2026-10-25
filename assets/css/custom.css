@@ -60,3 +60,7 @@
 				object-position: center;
 				width: 100%;
 			}
+
+.image img, .ahv img {
+  height: auto;
+}
